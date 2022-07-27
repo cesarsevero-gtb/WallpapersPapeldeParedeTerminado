@@ -60,6 +60,8 @@
         android:orientation="vertical">
 
         //suporta a primeira linha de categoria
+        //deixando o btn indisponivel (android:visibility="invisible") (android:clickable="false")
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -176,7 +178,7 @@
             android:layout_marginRight="5dp"
             android:orientation="horizontal">
 
-            //botão 1 da categoria
+            //botão 2 da categoria
             <androidx.cardview.widget.CardView
                 android:layout_width="150dp"
                 android:layout_height="50dp"
@@ -192,11 +194,11 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="Natureza"
+                    android:text="car"
                     android:paddingRight="20dp"
                     android:paddingTop="15dp"
                     android:textColor="@color/white"
-                    android:background="@drawable/gradientnature"
+                    android:background="@drawable/gradientcar"
                     android:gravity="end"
                     android:textStyle="bold"
                     android:textSize="15sp">
@@ -208,7 +210,7 @@
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_marginLeft="20dp"
-                    android:src="@drawable/nature">
+                    android:src="@drawable/car">
 
 
                 </ImageView>
@@ -237,11 +239,11 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="Anime"
+                    android:text="bus"
                     android:paddingRight="20dp"
                     android:paddingTop="15dp"
                     android:textColor="@color/white"
-                    android:background="@drawable/gradientnature"
+                    android:background="@drawable/gradientbus"
                     android:gravity="end"
                     android:textStyle="bold"
                     android:textSize="15sp">
@@ -253,7 +255,7 @@
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_marginLeft="20dp"
-                    android:src="@drawable/anime">
+                    android:src="@drawable/bus">
 
 
                 </ImageView>
@@ -300,11 +302,11 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="Natureza"
+                    android:text="train"
                     android:paddingRight="20dp"
                     android:paddingTop="15dp"
                     android:textColor="@color/white"
-                    android:background="@drawable/gradientnature"
+                    android:background="@drawable/gradienttrain"
                     android:gravity="end"
                     android:textStyle="bold"
                     android:textSize="15sp">
@@ -316,7 +318,7 @@
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_marginLeft="20dp"
-                    android:src="@drawable/nature">
+                    android:src="@drawable/train">
 
 
                 </ImageView>
@@ -345,11 +347,11 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="Anime"
+                    android:text="Atreinding"
                     android:paddingRight="20dp"
                     android:paddingTop="15dp"
                     android:textColor="@color/white"
-                    android:background="@drawable/gradientnature"
+                    android:background="@drawable/gradienttrending"
                     android:gravity="end"
                     android:textStyle="bold"
                     android:textSize="15sp">
@@ -361,7 +363,7 @@
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_marginLeft="20dp"
-                    android:src="@drawable/anime">
+                    android:src="@drawable/trending">
 
 
                 </ImageView>
@@ -385,6 +387,15 @@
 
     </LinearLayout>
 
+  <androidx.recyclerview.widget.RecyclerView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/recyclerview"
+      android:padding="2dp"
+      android:layout_below="@+id/bottomlayout">
+
+
+  </androidx.recyclerview.widget.RecyclerView>
 
 
 </RelativeLayout>
