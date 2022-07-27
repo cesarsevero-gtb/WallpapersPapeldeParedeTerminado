@@ -182,7 +182,7 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="150dp"
                 android:layout_height="50dp"
-                android:id="@+id/nature"
+                android:id="@+id/car"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginTop="5dp"
@@ -227,7 +227,7 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="150dp"
                 android:layout_height="50dp"
-                android:id="@+id/anime"
+                android:id="@+id/bus"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginTop="5dp"
@@ -290,7 +290,7 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="150dp"
                 android:layout_height="50dp"
-                android:id="@+id/nature"
+                android:id="@+id/train"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginTop="5dp"
@@ -335,7 +335,7 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="150dp"
                 android:layout_height="50dp"
-                android:id="@+id/anime"
+                android:id="@+id/treinding"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginTop="5dp"
@@ -347,7 +347,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="Atreinding"
+                    android:text="Treinding"
                     android:paddingRight="20dp"
                     android:paddingTop="15dp"
                     android:textColor="@color/white"
