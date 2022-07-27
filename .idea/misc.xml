@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/desenvolvimento/WallpapersPapeldeParede/app/src/main/res/drawable/buttonbg.xml" value="0.1815" />
+        <entry key="..\:/desenvolvimento/WallpapersPapeldeParede/app/src/main/res/drawable/gradientanime.xml" value="0.1815" />
+        <entry key="..\:/desenvolvimento/WallpapersPapeldeParede/app/src/main/res/drawable/gradientbus.xml" value="0.1815" />
+        <entry key="..\:/desenvolvimento/WallpapersPapeldeParede/app/src/main/res/drawable/gradientcar.xml" value="0.1815" />
         <entry key="..\:/desenvolvimento/WallpapersPapeldeParede/app/src/main/res/layout/activity_main.xml" value="0.25885416666666666" />
       </map>
     </option>

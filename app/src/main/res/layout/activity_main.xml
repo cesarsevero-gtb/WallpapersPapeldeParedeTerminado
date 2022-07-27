@@ -1,18 +1,390 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@drawable/gradientbg"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
 
-    <TextView
-        android:layout_width="wrap_content"
+    //criar barra de pesquisa
+    <LinearLayout
+        android:id="@+id/searchlayout"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+            //Texto dendro da pesquisa e designe
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pesquise aqui"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edittextbg"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:id="@+id/edittext"
+            />
+
+            //butão com o icone search
+        <ImageButton
+            android:id="@+id/search"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="-50dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_search_24"
+            app:tint="@color/white">
+        </ImageButton>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/searchlayout"
+        android:id="@+id/bottomlayout"
+        android:orientation="vertical">
+
+        //suporta a primeira linha de categoria
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal">
+
+                //botão 1 da categoria
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:id="@+id/nature"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                app:cardCornerRadius="5dp">
+
+
+                //texto da categoria
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Natureza"
+                    android:paddingRight="20dp"
+                    android:paddingTop="15dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/gradientnature"
+                    android:gravity="end"
+                    android:textStyle="bold"
+                    android:textSize="15sp">
+
+                </TextView>
+
+                //imagem da categoria
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/nature">
+
+
+                </ImageView>
+
+
+
+
+
+                
+
+            </androidx.cardview.widget.CardView>
+
+            //botão 1 da categoria
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:id="@+id/anime"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                app:cardCornerRadius="5dp">
+
+
+                //texto da categoria
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Anime"
+                    android:paddingRight="20dp"
+                    android:paddingTop="15dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/gradientanime"
+                    android:gravity="end"
+                    android:textStyle="bold"
+                    android:textSize="15sp">
+
+                </TextView>
+
+                //imagem da categoria
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/anime">
+
+
+                </ImageView>
+
+
+
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+        //suporta a primeira linha de categoria
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal">
+
+            //botão 1 da categoria
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:id="@+id/nature"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                app:cardCornerRadius="5dp">
+
+
+                //texto da categoria
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Natureza"
+                    android:paddingRight="20dp"
+                    android:paddingTop="15dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/gradientnature"
+                    android:gravity="end"
+                    android:textStyle="bold"
+                    android:textSize="15sp">
+
+                </TextView>
+
+                //imagem da categoria
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/nature">
+
+
+                </ImageView>
+
+
+
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            //botão 1 da categoria
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:id="@+id/anime"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                app:cardCornerRadius="5dp">
+
+
+                //texto da categoria
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Anime"
+                    android:paddingRight="20dp"
+                    android:paddingTop="15dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/gradientnature"
+                    android:gravity="end"
+                    android:textStyle="bold"
+                    android:textSize="15sp">
+
+                </TextView>
+
+                //imagem da categoria
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/anime">
+
+
+                </ImageView>
+
+
+
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+        //suporta a primeira linha de categoria
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal">
+
+            //botão 1 da categoria
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:id="@+id/nature"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                app:cardCornerRadius="5dp">
+
+
+                //texto da categoria
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Natureza"
+                    android:paddingRight="20dp"
+                    android:paddingTop="15dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/gradientnature"
+                    android:gravity="end"
+                    android:textStyle="bold"
+                    android:textSize="15sp">
+
+                </TextView>
+
+                //imagem da categoria
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/nature">
+
+
+                </ImageView>
+
+
+
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            //botão 1 da categoria
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:id="@+id/anime"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                app:cardCornerRadius="5dp">
+
+
+                //texto da categoria
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Anime"
+                    android:paddingRight="20dp"
+                    android:paddingTop="15dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/gradientnature"
+                    android:gravity="end"
+                    android:textStyle="bold"
+                    android:textSize="15sp">
+
+                </TextView>
+
+                //imagem da categoria
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/anime">
+
+
+                </ImageView>
+
+
+
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
