@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     private ArrayList<ImageModel> modelClasslist;
     private RecyclerView recyclerView;
     Adapter adapter;
-    CardView mnature,mbus,mcar,mtrain,mtrending,manime;
+    CardView ccachorro,cgato,ccarros,ccidades,cpaisagem,cpopulares;
     EditText editText;
     ImageButton search;
 
@@ -37,12 +37,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         getSupportActionBar().hide();
         recyclerView=findViewById(R.id.recyclerview);
-        mnature=findViewById(R.id.nature);
-        mbus=findViewById(R.id.bus);
-        mcar=findViewById(R.id.car);
-        mtrain=findViewById(R.id.train);
-        mtrending=findViewById(R.id.treinding);
-        manime=findViewById(R.id.anime);
+        ccachorro=findViewById(R.id.cachorro);
+        cgato=findViewById(R.id.gato);
+        ccarros=findViewById(R.id.carro);
+        ccidades=findViewById(R.id.cidade);
+        cpaisagem=findViewById(R.id.paisagem);
+        cpopulares=findViewById(R.id.populares);
         editText=findViewById(R.id.edittext);
         search=findViewById(R.id.search);
 
@@ -54,44 +54,44 @@ public class MainActivity extends AppCompatActivity {
         findphotos();
 
 
-        mnature.setOnClickListener(new View.OnClickListener() {
+        ccachorro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String query="nature";
+                String query="dog";
                 getsearchimage(query);
             }
         });
-        mbus.setOnClickListener(new View.OnClickListener() {
+        cgato.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String query="bus";
+                String query="cat";
                 getsearchimage(query);
             }
         });
-        mcar.setOnClickListener(new View.OnClickListener() {
+        ccidades.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String query="car";
+                String query="city";
                 getsearchimage(query);
             }
         });
-        mtrain.setOnClickListener(new View.OnClickListener() {
+        cpaisagem.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String query="train";
+                String query="landscape";
                 getsearchimage(query);
             }
         });
-        mtrending.setOnClickListener(new View.OnClickListener() {
+        cpopulares.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 findphotos();
             }
         });
-        manime.setOnClickListener(new View.OnClickListener() {
+        ccarros.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String query="anime";
+                String query="car";
                 getsearchimage(query);
             }
         });
@@ -103,7 +103,7 @@ public class MainActivity extends AppCompatActivity {
                 String query=editText.getText().toString().trim().toLowerCase();
                 if(query.isEmpty())
                 {
-                    Toast.makeText(getApplicationContext(),"Enter something", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(),"Digite ALgo", Toast.LENGTH_LONG).show();
                 }else
                 {
                     getsearchimage(query);

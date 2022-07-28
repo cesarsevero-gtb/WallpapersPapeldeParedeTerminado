@@ -23,19 +23,20 @@
         android:orientation="horizontal">
 
             //Texto dendro da pesquisa e designe
+
         <EditText
+            android:id="@+id/edittext"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edittextbg"
             android:hint="Pesquise aqui"
+            android:minHeight="48dp"
             android:padding="10dp"
             android:textColor="@color/white"
             android:textColorHint="@color/white"
-            android:layout_marginTop="5dp"
-            android:background="@drawable/edittextbg"
-            android:textStyle="bold"
             android:textSize="15sp"
-            android:id="@+id/edittext"
-            />
+            android:textStyle="bold" />
 
             //butão com o icone search
         <ImageButton
@@ -52,6 +53,8 @@
     </LinearLayout>
 
     <LinearLayout
+
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -74,7 +77,7 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="150dp"
                 android:layout_height="50dp"
-                android:id="@+id/nature"
+                android:id="@+id/cachorro"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginTop="5dp"
@@ -86,7 +89,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="Natureza"
+                    android:text="Cachorro"
                     android:paddingRight="20dp"
                     android:paddingTop="15dp"
                     android:textColor="@color/white"
@@ -102,7 +105,7 @@
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_marginLeft="20dp"
-                    android:src="@drawable/nature">
+                    android:src="@drawable/cachorro">
 
 
                 </ImageView>
@@ -119,7 +122,7 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="150dp"
                 android:layout_height="50dp"
-                android:id="@+id/anime"
+                android:id="@+id/gato"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginTop="5dp"
@@ -131,7 +134,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="Anime"
+                    android:text="Gato"
                     android:paddingRight="20dp"
                     android:paddingTop="15dp"
                     android:textColor="@color/white"
@@ -147,7 +150,8 @@
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_marginLeft="20dp"
-                    android:src="@drawable/anime">
+                    android:padding="2dp"
+                    android:src="@drawable/gato">
 
 
                 </ImageView>
@@ -182,7 +186,7 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="150dp"
                 android:layout_height="50dp"
-                android:id="@+id/car"
+                android:id="@+id/carro"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginTop="5dp"
@@ -194,7 +198,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="car"
+                    android:text="Carros"
                     android:paddingRight="20dp"
                     android:paddingTop="15dp"
                     android:textColor="@color/white"
@@ -210,7 +214,7 @@
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_marginLeft="20dp"
-                    android:src="@drawable/car">
+                    android:src="@drawable/carro">
 
 
                 </ImageView>
@@ -227,7 +231,7 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="150dp"
                 android:layout_height="50dp"
-                android:id="@+id/bus"
+                android:id="@+id/cidade"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginTop="5dp"
@@ -239,7 +243,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="bus"
+                    android:text="Cidade"
                     android:paddingRight="20dp"
                     android:paddingTop="15dp"
                     android:textColor="@color/white"
@@ -255,7 +259,8 @@
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_marginLeft="20dp"
-                    android:src="@drawable/bus">
+                    android:padding="5dp"
+                    android:src="@drawable/cidade">
 
 
                 </ImageView>
@@ -290,7 +295,7 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="150dp"
                 android:layout_height="50dp"
-                android:id="@+id/train"
+                android:id="@+id/paisagem"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginTop="5dp"
@@ -302,7 +307,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="train"
+                    android:text="Paisagem"
                     android:paddingRight="20dp"
                     android:paddingTop="15dp"
                     android:textColor="@color/white"
@@ -318,7 +323,8 @@
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_marginLeft="20dp"
-                    android:src="@drawable/train">
+                    android:padding="5dp"
+                    android:src="@drawable/natureza">
 
 
                 </ImageView>
@@ -335,7 +341,7 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="150dp"
                 android:layout_height="50dp"
-                android:id="@+id/treinding"
+                android:id="@+id/populares"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginTop="5dp"
@@ -347,7 +353,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="Treinding"
+                    android:text="Populares"
                     android:paddingRight="20dp"
                     android:paddingTop="15dp"
                     android:textColor="@color/white"
@@ -385,17 +391,19 @@
 
         </LinearLayout>
 
+
+
     </LinearLayout>
 
-  <androidx.recyclerview.widget.RecyclerView
-      android:layout_width="match_parent"
-      android:layout_height="match_parent"
-      android:id="@+id/recyclerview"
-      android:padding="2dp"
-      android:layout_below="@+id/bottomlayout">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/bottomlayout"
+        android:padding="2dp">
 
 
-  </androidx.recyclerview.widget.RecyclerView>
+    </androidx.recyclerview.widget.RecyclerView>
 
 
 </RelativeLayout>

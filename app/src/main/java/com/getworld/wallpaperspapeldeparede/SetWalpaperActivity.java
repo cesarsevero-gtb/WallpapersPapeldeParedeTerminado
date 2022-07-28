@@ -45,7 +45,7 @@ public class SetWalpaperActivity extends AppCompatActivity {
                 try {
                     Bitmap bitmap=((BitmapDrawable)imageView.getDrawable() ).getBitmap();
                     wallpaperManager.setBitmap(bitmap);
-                    Toast.makeText(getApplicationContext(),"DONE", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(),"Definido com Sucesso", Toast.LENGTH_LONG).show();
 
 
                 }
