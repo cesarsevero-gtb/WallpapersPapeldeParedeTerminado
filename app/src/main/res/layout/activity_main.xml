@@ -55,342 +55,731 @@
     <LinearLayout
 
 
+        android:id="@+id/bottomlayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         android:layout_below="@+id/searchlayout"
-        android:id="@+id/bottomlayout"
+        android:layout_marginTop="0dp"
         android:orientation="vertical">
+
 
         //suporta a primeira linha de categoria
         //deixando o btn indisponivel (android:visibility="invisible") (android:clickable="false")
 
-        <LinearLayout
+        <TextView
+            android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:orientation="horizontal">
+            android:text="CATEGORIA"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
 
-                //botão 1 da categoria
-            <androidx.cardview.widget.CardView
-                android:layout_width="150dp"
-                android:layout_height="50dp"
-                android:id="@+id/cachorro"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp"
-                app:cardCornerRadius="5dp">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="160dp">
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-                //texto da categoria
-                <TextView
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="Cachorro"
-                    android:paddingRight="20dp"
-                    android:paddingTop="15dp"
-                    android:textColor="@color/white"
-                    android:background="@drawable/gradientnature"
-                    android:gravity="end"
-                    android:textStyle="bold"
-                    android:textSize="15sp">
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
 
-                </TextView>
+                    //botão 1 da categoria
 
-                //imagem da categoria
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginLeft="20dp"
-                    android:src="@drawable/cachorro">
-
-
-                </ImageView>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cachorro"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="5dp"
+                        app:cardCornerRadius="5dp">
 
 
+                        //texto da categoria
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/gradientnature"
+                            android:gravity="end"
+                            android:paddingTop="15dp"
+                            android:paddingRight="20dp"
+                            android:text="Cachorro"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                        //imagem da categoria
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="20dp"
+                            android:src="@drawable/cachorro">
 
 
-
-                
-
-            </androidx.cardview.widget.CardView>
-
-            //botão 1 da categoria
-            <androidx.cardview.widget.CardView
-                android:layout_width="150dp"
-                android:layout_height="50dp"
-                android:id="@+id/gato"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp"
-                app:cardCornerRadius="5dp">
+                        </ImageView>
 
 
-                //texto da categoria
-                <TextView
+                    </androidx.cardview.widget.CardView>
+
+                    //botão 1 da categoria
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/gato"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="5dp"
+                        app:cardCornerRadius="5dp">
+
+
+                        //texto da categoria
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/gradientanime"
+                            android:gravity="end"
+                            android:paddingTop="15dp"
+                            android:paddingRight="20dp"
+                            android:text="Gato"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                        //imagem da categoria
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="20dp"
+                            android:padding="2dp"
+                            android:src="@drawable/gato">
+
+
+                        </ImageView>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="Gato"
-                    android:paddingRight="20dp"
-                    android:paddingTop="15dp"
-                    android:textColor="@color/white"
-                    android:background="@drawable/gradientanime"
-                    android:gravity="end"
-                    android:textStyle="bold"
-                    android:textSize="15sp">
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
 
-                </TextView>
+                    //botão 1 da categoria
 
-                //imagem da categoria
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginLeft="20dp"
-                    android:padding="2dp"
-                    android:src="@drawable/gato">
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/paisagem"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="5dp"
+                        app:cardCornerRadius="5dp">
 
 
-                </ImageView>
+                        //texto da categoria
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/gradienttrain"
+                            android:gravity="end"
+                            android:paddingTop="15dp"
+                            android:paddingRight="20dp"
+                            android:text="Paisagem"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                        //imagem da categoria
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="20dp"
+                            android:padding="5dp"
+                            android:src="@drawable/natureza">
 
 
+                        </ImageView>
 
 
+                    </androidx.cardview.widget.CardView>
+
+                    //botão 1 da categoria
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/populares"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="5dp"
+                        app:cardCornerRadius="5dp">
 
 
+                        //texto da categoria
 
-            </androidx.cardview.widget.CardView>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/gradienttrending"
+                            android:gravity="end"
+                            android:paddingTop="15dp"
+                            android:paddingRight="20dp"
+                            android:text="Populares"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                        //imagem da categoria
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="20dp"
+                            android:src="@drawable/trending">
 
 
+                        </ImageView>
 
 
+                    </androidx.cardview.widget.CardView>
 
 
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    //botão 2 da categoria
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/carro"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="5dp"
+                        app:cardCornerRadius="5dp">
 
 
-        </LinearLayout>
+                        //texto da categoria
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/gradientcar"
+                            android:gravity="end"
+                            android:paddingTop="15dp"
+                            android:paddingRight="20dp"
+                            android:text="Carros"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                        //imagem da categoria
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="20dp"
+                            android:src="@drawable/carro">
+
+
+                        </ImageView>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    //botão 1 da categoria
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cidade"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="5dp"
+                        app:cardCornerRadius="5dp">
+
+
+                        //texto da categoria
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/gradientbus"
+                            android:gravity="end"
+                            android:paddingTop="15dp"
+                            android:paddingRight="20dp"
+                            android:text="Cidade"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                        //imagem da categoria
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="20dp"
+                            android:padding="5dp"
+                            android:src="@drawable/cidade">
+
+
+                        </ImageView>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    //botão 2 da categoria
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/flores"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="5dp"
+                        app:cardCornerRadius="5dp">
+
+
+                        //texto da categoria
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/gradientflor"
+                            android:gravity="end"
+                            android:paddingTop="15dp"
+                            android:paddingRight="20dp"
+                            android:text="Flores"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                        //imagem da categoria
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="20dp"
+                            android:padding="5dp"
+                            android:src="@drawable/flor">
+
+
+                        </ImageView>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    //botão 1 da categoria
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/fundodooceano"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="5dp"
+                        app:cardCornerRadius="5dp">
+
+
+                        //texto da categoria
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/gradientfundodeoceano"
+                            android:gravity="end"
+                            android:paddingTop="15dp"
+                            android:paddingRight="20dp"
+                            android:text="Oceano"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                        //imagem da categoria
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="20dp"
+                            android:padding="5dp"
+                            android:src="@drawable/fundodomar">
+
+
+                        </ImageView>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    //botão 2 da categoria
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cavalo"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="5dp"
+                        app:cardCornerRadius="5dp">
+
+
+                        //texto da categoria
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/gradientcavalo"
+                            android:gravity="end"
+                            android:paddingTop="15dp"
+                            android:paddingRight="20dp"
+                            android:text="Cavalo"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                        //imagem da categoria
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="20dp"
+                            android:padding="5dp"
+                            android:src="@drawable/cavalo">
+
+
+                        </ImageView>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    //botão 1 da categoria
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/ceu"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="5dp"
+                        app:cardCornerRadius="5dp">
+
+
+                        //texto da categoria
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/gradientceu"
+                            android:gravity="end"
+                            android:paddingTop="15dp"
+                            android:paddingRight="20dp"
+                            android:text="Céu"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                        //imagem da categoria
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="20dp"
+                            android:padding="5dp"
+                            android:src="@drawable/ceu">
+
+
+                        </ImageView>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    //botão 2 da categoria
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/auroraboreal"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="5dp"
+                        app:cardCornerRadius="5dp">
+
+
+                        //texto da categoria
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/gradientnature"
+                            android:gravity="end"
+                            android:paddingTop="15dp"
+                            android:paddingRight="20dp"
+                            android:text="Boreal"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                        //imagem da categoria
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="20dp"
+                            android:src="@drawable/aurora">
+
+
+                        </ImageView>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    //botão 1 da categoria
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/arcoiris"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="5dp"
+                        app:cardCornerRadius="5dp">
+
+
+                        //texto da categoria
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/gradientanime"
+                            android:gravity="end"
+                            android:paddingTop="15dp"
+                            android:paddingRight="20dp"
+                            android:text="Arco-Iris"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                        //imagem da categoria
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="20dp"
+                            android:padding="5dp"
+                            android:src="@drawable/arcoiris">
+
+
+                        </ImageView>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    //botão 2 da categoria
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cantor"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="5dp"
+                        app:cardCornerRadius="5dp">
+
+
+                        //texto da categoria
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/gradienttrain"
+                            android:gravity="end"
+                            android:paddingTop="15dp"
+                            android:paddingRight="20dp"
+                            android:text="Cantor"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                        //imagem da categoria
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="20dp"
+                            android:padding="5dp"
+                            android:src="@drawable/cantor">
+
+
+                        </ImageView>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    //botão 1 da categoria
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/infatil"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="5dp"
+                        app:cardCornerRadius="5dp">
+
+
+                        //texto da categoria
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/gradienttrending"
+                            android:gravity="end"
+                            android:paddingTop="15dp"
+                            android:paddingRight="20dp"
+                            android:text="Bebês"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                        //imagem da categoria
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="20dp"
+                            android:padding="5dp"
+                            android:src="@drawable/bebe">
+
+
+                        </ImageView>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
 
         //suporta a primeira linha de categoria
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:orientation="horizontal">
-
-            //botão 2 da categoria
-            <androidx.cardview.widget.CardView
-                android:layout_width="150dp"
-                android:layout_height="50dp"
-                android:id="@+id/carro"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp"
-                app:cardCornerRadius="5dp">
-
-
-                //texto da categoria
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="Carros"
-                    android:paddingRight="20dp"
-                    android:paddingTop="15dp"
-                    android:textColor="@color/white"
-                    android:background="@drawable/gradientcar"
-                    android:gravity="end"
-                    android:textStyle="bold"
-                    android:textSize="15sp">
-
-                </TextView>
-
-                //imagem da categoria
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginLeft="20dp"
-                    android:src="@drawable/carro">
-
-
-                </ImageView>
-
-
-
-
-
-
-
-            </androidx.cardview.widget.CardView>
-
-            //botão 1 da categoria
-            <androidx.cardview.widget.CardView
-                android:layout_width="150dp"
-                android:layout_height="50dp"
-                android:id="@+id/cidade"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp"
-                app:cardCornerRadius="5dp">
-
-
-                //texto da categoria
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="Cidade"
-                    android:paddingRight="20dp"
-                    android:paddingTop="15dp"
-                    android:textColor="@color/white"
-                    android:background="@drawable/gradientbus"
-                    android:gravity="end"
-                    android:textStyle="bold"
-                    android:textSize="15sp">
-
-                </TextView>
-
-                //imagem da categoria
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginLeft="20dp"
-                    android:padding="5dp"
-                    android:src="@drawable/cidade">
-
-
-                </ImageView>
-
-
-
-
-
-
-
-            </androidx.cardview.widget.CardView>
-
-
-
-
-
-
-
-
-        </LinearLayout>
 
         //suporta a primeira linha de categoria
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:orientation="horizontal">
-
-            //botão 1 da categoria
-            <androidx.cardview.widget.CardView
-                android:layout_width="150dp"
-                android:layout_height="50dp"
-                android:id="@+id/paisagem"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp"
-                app:cardCornerRadius="5dp">
-
-
-                //texto da categoria
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="Paisagem"
-                    android:paddingRight="20dp"
-                    android:paddingTop="15dp"
-                    android:textColor="@color/white"
-                    android:background="@drawable/gradienttrain"
-                    android:gravity="end"
-                    android:textStyle="bold"
-                    android:textSize="15sp">
-
-                </TextView>
-
-                //imagem da categoria
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginLeft="20dp"
-                    android:padding="5dp"
-                    android:src="@drawable/natureza">
-
-
-                </ImageView>
-
-
-
-
-
-
-
-            </androidx.cardview.widget.CardView>
-
-            //botão 1 da categoria
-            <androidx.cardview.widget.CardView
-                android:layout_width="150dp"
-                android:layout_height="50dp"
-                android:id="@+id/populares"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp"
-                app:cardCornerRadius="5dp">
-
-
-                //texto da categoria
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="Populares"
-                    android:paddingRight="20dp"
-                    android:paddingTop="15dp"
-                    android:textColor="@color/white"
-                    android:background="@drawable/gradienttrending"
-                    android:gravity="end"
-                    android:textStyle="bold"
-                    android:textSize="15sp">
-
-                </TextView>
-
-                //imagem da categoria
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginLeft="20dp"
-                    android:src="@drawable/trending">
-
-
-                </ImageView>
-
-
-
-
-
-
-
-            </androidx.cardview.widget.CardView>
-
-
-
-
-
-
-
-
-        </LinearLayout>
-
 
 
     </LinearLayout>

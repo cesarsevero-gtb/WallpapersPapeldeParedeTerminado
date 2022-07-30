@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     private ArrayList<ImageModel> modelClasslist;
     private RecyclerView recyclerView;
     Adapter adapter;
-    CardView ccachorro,cgato,ccarros,ccidades,cpaisagem,cpopulares;
+    CardView ccachorro,cgato,ccarros,ccidades,cpaisagem,cpopulares,cflor,coceano,ccavalo,cceu,caurora,ciris,ccantor,cbebe;
     EditText editText;
     ImageButton search;
 
@@ -43,8 +43,18 @@ public class MainActivity extends AppCompatActivity {
         ccidades=findViewById(R.id.cidade);
         cpaisagem=findViewById(R.id.paisagem);
         cpopulares=findViewById(R.id.populares);
+        cflor=findViewById(R.id.flores);
+        coceano=findViewById(R.id.fundodooceano);
+        ccavalo=findViewById(R.id.cavalo);
+        cceu=findViewById(R.id.ceu);
+        caurora=findViewById(R.id.auroraboreal);
+        ciris=findViewById(R.id.arcoiris);
+        ccantor=findViewById(R.id.cantor);
+        cbebe=findViewById(R.id.infatil);
+
         editText=findViewById(R.id.edittext);
         search=findViewById(R.id.search);
+
 
         modelClasslist=new ArrayList<>();
         recyclerView.setLayoutManager(new GridLayoutManager(this,2));
@@ -75,6 +85,71 @@ public class MainActivity extends AppCompatActivity {
                 getsearchimage(query);
             }
         });
+
+        cflor.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String query="flowers";
+                getsearchimage(query);
+            }
+        });
+
+        coceano.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String query="seabed";
+                getsearchimage(query);
+            }
+        });
+
+        ccavalo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String query="horses";
+                getsearchimage(query);
+            }
+        });
+
+        cceu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String query="sky";
+                getsearchimage(query);
+            }
+        });
+
+        caurora.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String query="northern%20lights";
+                getsearchimage(query);
+            }
+        });
+
+        ciris.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String query="rainbow";
+                getsearchimage(query);
+            }
+        });
+
+        ccantor.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String query="singers";
+                getsearchimage(query);
+            }
+        });
+
+        cbebe.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String query="infantil";
+                getsearchimage(query);
+            }
+        });
+
         cpaisagem.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
